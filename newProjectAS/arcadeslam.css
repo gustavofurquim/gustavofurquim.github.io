@@ -3,7 +3,8 @@ html {
     display: flex;
 }
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    letter-spacing: 1px;
     position: relative;
     margin: auto;
     background: #141414;
@@ -182,12 +183,12 @@ img{
     width: 67%;
     text-align: right;
     font-size: 1.5rem;
-    margin-left: 4%;
+    margin-left: 5%;
 }
   
 .column2 {
     float: right;
-    width: 26%;
+    width: 25%;
     text-align: left;
   
 }
