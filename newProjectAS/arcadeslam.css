@@ -3,13 +3,12 @@ html {
     display: flex;
 }
 body {
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-family: Andale Mono, monospace;
     letter-spacing: 1px;
     position: relative;
     margin: auto;
     background: #141414;
     perspective: 500px;
-    /*color: rgb(20, 20, 20);*/
     color: #a045eb;
 }
 main {
@@ -27,7 +26,7 @@ main {
     margin: 0.5em 0;
     padding: 0.8em 2.2em;
     cursor: pointer;
-    background: rgb(240, 252, 255);
+    background: rgb(250, 254, 255);
     border: none;
     border-radius: 0.4em;
     text-transform: lowercase;
@@ -143,6 +142,27 @@ img{
     position: relative;
     margin: auto;
     right: 64%;
+    -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+    -webkit-filter: brightness(90%);
+}
+
+#logo:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    -webkit-filter: brightness(100%);
+}
+
+#verticalAlign figure{
+    -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+    -webkit-filter: brightness(90%);
+}
+
+#verticalAlign figure:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    -webkit-filter: brightness(100%);
 }
 
 #verticalAlign {
@@ -159,7 +179,7 @@ img{
 }
 
 #bodyDiv{
-    background-color: rgb(235, 252, 255);
+    background-color: rgb(250, 254, 255);
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 1rem;
@@ -167,6 +187,14 @@ img{
     padding-bottom: 1rem;
     padding-right: 1rem;
     border-radius: 25px 25px 25px 5px;
+}
+
+#firstDiv{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 #secondDiv{
@@ -177,7 +205,6 @@ img{
     border-radius: 25px 25px 25px 5px;
 }
 
-  
 .column1 {
     float: left;
     width: 67%;
@@ -195,36 +222,24 @@ img{
   
 .column2 img{
     border-radius: 5px;
-    box-shadow: 5px 10px;
+    box-shadow: 5px 10px 15px rgba(174, 46, 233, 0.623);
+    transition: 0.5s;
+}
+
+.column2 img:hover {
+    box-shadow: 5px 10px 15px rgba(46, 217, 233, 0.623);
 }
   
 .column1 h3{
     font-size: 0.8rem;
 }
   
-.column11 h3{
-    font-size: 0.8rem;
+#tpcontent{
+    padding-top: 0.2rem;
+    line-height: 1.8rem;
+    font-size: 1.25rem;
 }
-  
-.column11 {
-    float: right;
-    width: 65%;
-    text-align: left;
-    font-size: 1.5rem;
-    margin-right: 5%;
-}
-  
-.column22 {
-    float: left;
-    width: 27%;
-    text-align: right;
-}
-  
-.column22 img{
-    border-radius: 5px;
-    box-shadow: 5px 10px;
-}
-  
+
 .row:after {
     content: "";
     display: table;
@@ -278,8 +293,8 @@ a{
 }
 
 #checkButton, #contactSend {
-    background-color: #83f0e5;
-    border: 2px solid #83f0e5;
+    background-color: #aef1eb;
+    border: 2px solid #aef1eb;
     border-radius: 50px;
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
@@ -327,4 +342,56 @@ input{
 
 #backMinor{
     font-family:monospace;
+}
+
+#images{
+    display: inline-flex;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+#images img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 15px 20px 30px rgba(171, 100, 204, 0.5);
+    width: 230px;
+    height: 407px;
+    transition: .5s ease;
+    opacity: 0.8;
+}
+
+.container1, .container2, .container3, .container4,.container5, .container6{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.middle1, .middle2, .middle3, .middle4, .middle5, .middle6 {
+    transition: .5s ease;
+    opacity: 0;
+}
+  
+.container1:hover #imagem1, .container2:hover #imagem2, .container3:hover #imagem3, .container4:hover #imagem4, .container5:hover #imagem5, .container6:hover #imagem6 {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 10px 50px 30px rgba(179, 243, 248, 0.651);
+}
+  
+.container1:hover .middle1, .container2:hover .middle2, .container3:hover .middle3, .container4:hover .middle4, .container5:hover .middle5, .container6:hover .middle6 {
+    opacity: 1;
+    transform: scale(1.1);
+}
+  
+.text1, .text2, .text3, .text4, .text5, .text6{
+    font-size: 16px;
+    padding: 16px 32px;
+    text-shadow: 2px 1px 2px rgba(182, 182, 182, 0.651);
+    color:#c277ff;
+}
+
+#bodyDiv p:hover {
+    text-shadow: 2px 1px 2px rgba(169, 253, 253, 0.863);
 }

@@ -138,6 +138,7 @@ function button4(){
     setTimeout(function(){window.location.href = 'leaderboard.html';},2000);
 }
 
+//checkButton
 function check(){
     document.getElementById("checkButton").style.display = "none";
     document.getElementById("check").style.paddingBottom = "0.2rem";
